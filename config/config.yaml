@@ -2,4 +2,6 @@ artifcats_root: artifacts
 
 data_ingestion:
   root: artifacts/data_ingestion
-  source_url: 
+  source_url: https://github.com/kamaleshkio/Text_Summarizer/raw/refs/heads/main/src/textSummarizer/textsummarizer_data/samsumdata.zip
+  local_data_file: data/ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
