@@ -4,7 +4,7 @@ from textSummarizer.utils import common
 from textSummarizer.constants import *
 
 from textSummarizer.entity import DataIngestionConfig
-from textSummarizer.utils import create_directories, read_yaml
+from textSummarizer.utils.common import create_directories, read_yaml
 
 class ConfigurationManager:
     def __init__(
