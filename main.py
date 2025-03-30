@@ -27,7 +27,7 @@ try:
 
 except Exception as e:
     logger.exception(f"Error occurred during {STAGE_NAME} execution: {e}")
-    raise e
+    raise e 
 
 
 STAGE_NAME = "Data Transformation Stage"
