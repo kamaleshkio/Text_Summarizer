@@ -44,5 +44,5 @@ class ModelEvaluationConfig:
     root_dir: Path
     data_path: Path
     model_path: Path
-    tokenizer_path: Path
+    tokenizer_name: str
     metrics_file_name: Path

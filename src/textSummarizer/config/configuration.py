@@ -95,7 +95,7 @@ class ConfigurationManager:
               root_dir = config.root_dir,
               data_path = config.data_path,
               model_path = config.model_path,
-              tokenizer_path = config.tokenizer_path,
+              tokenizer_name = config.tokenizer_path,
               metrics_file_name = config.metrics_file_name
           )
 
