@@ -1,13 +1,16 @@
 FROM python:3.11-slim
 
-RUN apt update -y && apt install awscli -y
+RUN apt-get update && \
+    apt-get install -y awscli && \
+    rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
 COPY . /app
 
-RUN pip install -r requirements.txt
-RUN pip install --upgrade accelerate 
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Optional: remove unnecessary packages
 RUN pip uninstall -y transformers accelerate
 
 CMD ["python", "app.py"]
